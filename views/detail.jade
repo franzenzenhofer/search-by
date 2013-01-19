@@ -1,0 +1,9 @@
+extends layout
+
+block mainContent
+    h1 Search by Drawing
+    div #{imgurl}
+    div #{google_search_by_image_url}
+    div!= google_search_by_image_url
+    img(src=imgurl)
+    iframe(src!=google_search_by_image_url, width='100%', height='1000')

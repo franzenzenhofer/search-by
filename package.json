@@ -4,6 +4,8 @@
   "description": "simple coffeescript skeleton with grunt build processes",
   "main": "index.html",
   "dependencies": {
+    "jade": "0.28.1",
+    "express": "3.0.6",
     "coffee-script": "1.4.0",
     "knox": "0.4.6",
     "crypot": "0.0.3",
