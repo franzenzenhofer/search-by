@@ -1,0 +1,4 @@
+node_modules
+raw
+.DS_Store
+gitignored_config.coffee

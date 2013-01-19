@@ -1,0 +1,6 @@
+body {}
+canvas {border: 2px solid lightgray;}
+#searchcanvas {width:480px; height:360px;}
+#sizes {height: 50px;line-height: 50px; margin-top:5px; margin-bottom:10px;}
+.color {width: 20px; height: 20px; border:1px solid black; display:inline-block; text-decoration: none; margin: 0; padding:0;}
+.size {border:1px solid black; display:inline-block; text-decoration: none; border-radius: 50%; vertical-align: middle;}
