@@ -189,7 +189,8 @@ var __slice = Array.prototype.slice;
       this.context.lineCap = "round";
       this.context.beginPath();
       this.context.moveTo(action.events[0].x, action.events[0].y);
-      this.context.lineTo(action.events[0].x+0.1, action.events[0].y+0.11);
+      this.context.lineTo(action.events[0].x+1, action.events[0].y);
+      this.context.lineTo(action.events[0].x, action.events[0].y-1);
       _ref = action.events;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         event = _ref[_i];

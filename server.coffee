@@ -4,7 +4,7 @@ http = require('http')
 url = require('url')
 app = express();
 server = http.createServer(app)
-port = if process.env.PORT then process.env.PORT else 3000
+port = if process.env.PORT then process.env.PORT else 3333
 
 #setting up socker.io
 io = require('socket.io').listen(server)

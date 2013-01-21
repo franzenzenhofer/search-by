@@ -1,6 +1,6 @@
 $('#google').html(' <span style="color: #0140CA;">G</span><span style="color: #DD1812;">o</span><span style="color: #FCCA03;">o</span><span style="color: #0140CA;">g</span><span style="color: #16A61E;">l</span><span style="color: #DD1812;">e</span> ')
 
-socket = io.connect('http://localhost')
+socket = io.connect()
 socket.on('upload success', (data) ->
   #console.log(data)
   #socket.emit('my other event', { my: 'data' })
@@ -34,6 +34,9 @@ $('.color').click((elem)->
   c=$(this).attr('data-color')
   $('.size').css('background', c)
 )
+#white background
+ctx =  $('#searchcanvas').get(0).getContext('2d')
+ctx.fillStyle = 'rgb(255,255,255)'
 
 $('#searchcanvas').sketch({defaultColor: "#000"; defaultSize: 33;})
 
@@ -42,7 +45,6 @@ if ((navigator.userAgent.indexOf('mobile') != -1) || (navigator.userAgent.indexO
     <div class="warning">Device not supported! <b>:(</b></div>
     <div class="note">Sadly, there is a redirect bug on the <b>Google</b> website for mobile decives. On the <b>Google Search by Image</b> page, Google <b><i>redirects mobile devices from the result page to the Google homepage</i></b>, so you can not view the result of your search. Sorry. <a href="http://www.google.com/support/forum/p/Web+Search/thread?tid=6c8fda0c0f045f07&hl=en">The bug is already reported to Google.</a> The only workaround is to use a non mobile browser.</div>
   ''')
-
 
 $('#q').click( ()->
   socket.emit('q', dataurl: $('#searchcanvas').get(0).toDataURL("image/png"))

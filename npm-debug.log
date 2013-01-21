@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'package.json' ]
+2 info using npm@1.2.0
+3 info using node@v0.8.17
+4 verbose read json /Users/franzseo/dev/search-by-drawing/package.json
+5 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/coffee-script/package.json
+6 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/coffeecup/package.json
+7 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/crypto/package.json
+8 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/express/package.json
+9 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/grunt/package.json
+10 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/grunt-contrib-concat/package.json
+11 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/grunt-contrib-htmlmin/package.json
+12 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/grunt-contrib-mincss/package.json
+13 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/grunt-contrib-uglify/package.json
+14 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/grunt-contrib-watch/package.json
+15 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/jade/package.json
+16 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/knox/package.json
+17 verbose read json /Users/franzseo/dev/search-by-drawing/node_modules/socket.io/package.json
+18 verbose from cache /Users/franzseo/dev/search-by-drawing/package.json
+19 verbose readDependencies using package.json deps
+20 verbose cache add [ 'package.json', null ]
+21 silly cache add name=undefined spec="package.json" args=["package.json",null]
+22 verbose parsed url { pathname: 'package.json',
+22 verbose parsed url   path: 'package.json',
+22 verbose parsed url   href: 'package.json' }
+23 silly lockFile 7030d0b2-package-json package.json
+24 verbose lock package.json /Users/franzseo/.npm/7030d0b2-package-json.lock
+25 verbose chmod /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/tmp.tgz 644
+26 verbose tar unpack /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/tmp.tgz
+27 silly lockFile a70f9b83-82720-0-5001117249485105-package /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/package
+28 verbose lock /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/package /Users/franzseo/.npm/a70f9b83-82720-0-5001117249485105-package.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 verbose read json /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/package/package.json
+31 error not a package /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/tmp.tgz
+32 silly lockFile a70f9b83-82720-0-5001117249485105-package /var/folders/dr/lb5fyk0n2xsctsrybxwm_c0h0000gn/T/npm-4888/1358796382720-0.5001117249485105/package
+33 silly lockFile 7030d0b2-package-json package.json
+34 verbose addNamed [ 'package.json', '' ]
+35 verbose addNamed [ null, '' ]
+36 silly lockFile 20e84675-package-json package.json@
+37 verbose lock package.json@ /Users/franzseo/.npm/20e84675-package-json.lock
+38 silly addNameRange { name: 'package.json', range: '', hasData: false }
+39 verbose url raw package.json
+40 verbose url resolving [ 'https://registry.npmjs.org/', './package.json' ]
+41 verbose url resolved https://registry.npmjs.org/package.json
+42 info trying registry request attempt 1 at 20:26:22
+43 http GET https://registry.npmjs.org/package.json
+44 http 404 https://registry.npmjs.org/package.json
+45 silly registry.get cb [ 404,
+45 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+45 silly registry.get     date: 'Mon, 21 Jan 2013 19:24:50 GMT',
+45 silly registry.get     'content-type': 'application/json',
+45 silly registry.get     'content-length': '52',
+45 silly registry.get     'cache-control': 'must-revalidate' } ]
+46 silly lockFile 20e84675-package-json package.json@
+47 error 404 'package.json' is not in the npm registry.
+47 error 404 You should bug the author to publish it
+47 error 404
+47 error 404 Note that you can also install from a
+47 error 404 tarball, folder, or http url, or git url.
+48 error System Darwin 12.2.1
+49 error command "node" "/usr/local/bin/npm" "install" "package.json"
+50 error cwd /Users/franzseo/dev/search-by-drawing
+51 error node -v v0.8.17
+52 error npm -v 1.2.0
+53 error code E404
+54 verbose exit [ 1, true ]
