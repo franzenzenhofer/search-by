@@ -8,7 +8,7 @@
     "express": "3.0.6",
     "coffee-script": "1.4.0",
     "knox": "0.4.6",
-    "crypot": "0.0.3",
+    "crypto": "0.0.3",
     "express": "3.0.6",
     "socket.io": "0.9.13",
     "grunt": "0.4.0a",
